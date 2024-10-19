@@ -1,0 +1,9 @@
+{% load static %}
+<header>
+    <div class="logo">
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo.jpg' %}" alt="Library Logo"></a>
+    </div>
+    <div class="header-text">Library Management System</div>
+    <a href="{% url 'login' %}" class="login-button">Login</a>
+    <a href="{% url 'signup' %}" class="sign-button">Sign Up</a>
+</header>
